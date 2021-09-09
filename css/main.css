@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: #FBECF4;
+}
+
+.nav-container a {
+  color: black;
+}
+
+.nav-container header {
+  padding: 1em;
+}
+
+.nav-container header .logo {
+  color: #EE6A7A;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-container header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav-container header ul a {
+  display: block;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.social-header {
+  display: none;
+}
+
+.social-header img {
+  width: 55px;
+  height: 55px;
+}
+
+.featured-links img {
+  width: 24px;
+}
+
+.one {
+  width: 125px;
+}
+
+.two {
+  width: 68px;
+}
+
+.three {
+  width: 68px;
+}
+
+.hero {
+  text-align: center;
+  background: #FAF3F7;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #53424C;
+  font-weight: 700;
+}
+
+.hero svg {
+  width: 16px;
+}
+
+.hero-design {
+  display: none;
+}
+
+.meet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 260px;
+}
+
+.meet p {
+  margin: 0;
+  margin-left: 10px;
+  text-align: left;
+  color: #53424C;
+  font-weight: 700;
+}
+
+.meet span {
+  font-size: 26px;
+}
+/*# sourceMappingURL=main.css.map */
