@@ -236,4 +236,116 @@ footer {
   background: #fbecf4;
   display: none;
 }
+
+@media only screen and (min-width: 800px) {
+  .nav-container header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-container header li a {
+    margin: 0;
+    margin-right: 50px;
+  }
+  .social-header {
+    display: none;
+  }
+  .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 12em;
+    float: right;
+  }
+  .social-header img {
+    width: 35px;
+    height: 35px;
+  }
+  .featured {
+    padding: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .featured .right {
+    width: 200px;
+  }
+  .left {
+    width: 500px;
+  }
+  .decoration {
+    left: 20px;
+  }
+  .portfolio {
+    padding: 2em;
+  }
+  footer {
+    display: block;
+    height: 200px;
+    position: relative;
+  }
+  .footer-img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background: #faf3f7;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 80px;
+    font-weight: 700;
+  }
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: #fbecf4;
+  }
+  header {
+    padding: 2em 2em 2em 300px !important;
+  }
+  .social-header {
+    padding: 2em 300px 2em 0;
+    display: block;
+  }
+  section {
+    padding: 4em;
+  }
+  section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+}
 /*# sourceMappingURL=main.css.map */
