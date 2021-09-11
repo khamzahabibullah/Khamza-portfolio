@@ -439,26 +439,26 @@ footer {
 
 @-webkit-keyframes circleAnim {
   from {
-    -webkit-transform: translate(1px, 1px);
-            transform: translate(1px, 1px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
     z-index: 5;
   }
   to {
-    -webkit-transform: translate(1px, 55px);
-            transform: translate(1px, 55px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
     z-index: 5;
   }
 }
 
 @keyframes circleAnim {
   from {
-    -webkit-transform: translate(1px, 1px);
-            transform: translate(1px, 1px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
     z-index: 5;
   }
   to {
-    -webkit-transform: translate(1px, 55px);
-            transform: translate(1px, 55px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
     z-index: 5;
   }
 }
