@@ -92,7 +92,7 @@ img {
   }
 
   .scroll {
-    width: 16px;
+    width: 28px;
     margin-top: 50px;
   }
 }
@@ -356,7 +356,7 @@ footer {
   }
 
   .scroll {
-    width: 24px !important;
+    width: 34px !important;
   }
 
   .featured {
@@ -438,5 +438,21 @@ footer {
 
   .icon-container {
     height: px;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(1px, 1px);
+    z-index: 5;
+  }
+
+  to {
+    transform: translate(1px, 55px);
+    z-index: 5;
   }
 }

@@ -80,7 +80,7 @@ img {
 }
 
 .hero .scroll {
-  width: 16px;
+  width: 28px;
   margin-top: 50px;
 }
 
@@ -353,7 +353,7 @@ footer {
     width: 100%;
   }
   .scroll {
-    width: 24px !important;
+    width: 34px !important;
   }
   .featured {
     display: -ms-grid;
@@ -430,6 +430,36 @@ footer {
   }
   .icon-container {
     height: px;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(1px, 55px);
+            transform: translate(1px, 55px);
+    z-index: 5;
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(1px, 55px);
+            transform: translate(1px, 55px);
+    z-index: 5;
   }
 }
 /*# sourceMappingURL=main.css.map */
