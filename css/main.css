@@ -79,7 +79,7 @@ img {
   margin-bottom: 30px;
 }
 
-.hero svg {
+.hero .scroll {
   width: 16px;
   margin-top: 50px;
 }
@@ -160,7 +160,6 @@ img {
 
 .skills {
   background: #ee6a7a;
-  padding: 5px;
 }
 
 .skills h1 {
@@ -328,24 +327,37 @@ footer {
     background: #fbecf4;
   }
   header {
-    padding: 2em 2em 2em 300px !important;
+    padding: 2em 2em 2em 4em !important;
   }
   .social-header {
-    padding: 2em 300px 2em 0;
+    padding: 2em 4em 2em 0;
     display: block;
   }
   section {
     padding: 4em;
   }
-  section ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 7em;
-    float: right;
+  .meet {
+    margin: unset;
+    font-size: 30px;
+    width: 500px;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 35%;
+    width: 100%;
+  }
+  .scroll {
+    width: 24px !important;
+  }
+  .featured .left {
+    width: unset;
+  }
+  .skills-container ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
   }
 }
 /*# sourceMappingURL=main.css.map */

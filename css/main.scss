@@ -91,7 +91,7 @@ img {
     margin-bottom: 30px;
   }
 
-  svg {
+  .scroll {
     width: 16px;
     margin-top: 50px;
   }
@@ -169,7 +169,6 @@ img {
 
 .skills {
   background: #ee6a7a;
-  padding: 5px;
 
   h1 {
     color: white;
@@ -325,22 +324,43 @@ footer {
     }
   }
   header {
-    padding: 2em 2em 2em 300px !important;
+    padding: 2em 2em 2em 4em !important;
   }
 
   .social-header {
-    padding: 2em 300px 2em 0;
+    padding: 2em 4em 2em 0;
     display: block;
   }
 
   section {
     padding: 4em;
+  }
 
-    ul {
-      display: flex;
-      justify-content: space-between;
-      width: 7em;
-      float: right;
+  .meet {
+    margin: unset;
+    font-size: 30px;
+    width: 500px;
+  }
+
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 35%;
+    width: 100%;
+  }
+
+  .scroll {
+    width: 24px !important;
+  }
+
+  .featured {
+    .left {
+      width: unset;
     }
+  }
+
+  .skills-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
   }
 }
