@@ -305,11 +305,11 @@ footer {
 
     .content {
       background: #faf3f7;
-      padding: 6em 8em 6em 4em;
+      padding: 6em 8em 6em 10em;
       text-align: left;
 
       h1 {
-        font-size: 80px;
+        font-size: 50px;
         font-weight: 700;
       }
     }
@@ -324,22 +324,28 @@ footer {
     }
   }
   header {
-    padding: 2em 2em 2em 4em !important;
+    padding: 2em 2em 2em 10em !important;
   }
 
   .social-header {
-    padding: 2em 4em 2em 0;
+    padding: 2em 10em 2em 0;
     display: block;
   }
 
   section {
-    padding: 4em;
+    padding: 10em;
   }
 
   .meet {
     margin: unset;
-    font-size: 30px;
+    font-size: 18px;
     width: 500px;
+    margin-bottom: 4em;
+    margin-top: 2em;
+
+    span {
+      font-size: 20px;
+    }
   }
 
   .hero-design {
@@ -354,13 +360,83 @@ footer {
   }
 
   .featured {
+    display: grid;
+    grid-template-columns: 40% auto;
+    padding: 10em;
+
     .left {
+      width: unset;
+      display: grid;
+      place-content: center;
+    }
+
+    .right {
       width: unset;
     }
   }
 
+  .featured-img {
+    padding-top: 6em;
+  }
+  .decoration {
+    padding-top: 6em;
+    top: 0;
+    right: 50%;
+    left: unset;
+    width: 50%;
+  }
   .skills-container ul {
     display: grid;
     grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+    margin-bottom: -80px;
+    // padding-left: 6em;
+    // padding-right: 6em;
+  }
+
+  .skills-container ul li {
+    margin: unset;
+  }
+
+  .skills {
+    padding: 4em, 10em, 4em, 10em !important;
+    h1 {
+      margin: 0;
+      padding: 0;
+      padding-bottom: 2em;
+    }
+  }
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+
+  .portfolio-left {
+    width: unset;
+    display: grid;
+    place-content: center;
+  }
+
+  .portfolio-img {
+    margin-top: 4em;
+    margin-left: 4em;
+  }
+
+  .portfolio {
+    overflow: hidden;
+    background-color: #f7f7f7;
+    padding: 4em 10em 4em 10em;
+  }
+
+  .cta {
+    background-color: #f7f7f7;
+    margin: 0;
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .icon-container {
+    height: px;
   }
 }
