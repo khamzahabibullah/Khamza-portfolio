@@ -168,7 +168,7 @@ body {
 }
 .work__link span {
   border-bottom: 2px solid #0045f8;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 .work__link--blue {
   color: #0045f8;
