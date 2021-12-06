@@ -98,7 +98,7 @@ body {
   font-size: 9rem;
   font-weight: 400;
   line-height: 8rem;
-  letter-spacing: 2%;
+  letter-spacing: 2px;
 }
 
 .para-primary {
@@ -146,7 +146,7 @@ body {
   margin-top: 7rem;
   color: #999999;
   font-size: 20px;
-  width: 58rem;
+  max-width: 58rem;
 }
 .work__info {
   width: 60%;
@@ -163,20 +163,26 @@ body {
   color: white;
   text-decoration: none;
   font-size: 1.6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   margin-top: 8rem;
 }
 .work__link span {
-  border-bottom: 1px solid #0045f8;
+  border-bottom: 2px solid #0045f8;
+  transition: all 0.2s;
 }
 .work__link--blue {
   color: #0045f8;
   font-size: 1.6rem;
   text-decoration: none;
 }
+.work__link span:hover {
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid #0045f8;
+}
 
 .container {
-  padding: 0 12rem;
+  padding-inline: 12em;
+  margin-inline: auto;
 }
 
 .navigation {
@@ -196,6 +202,10 @@ body {
 .navigation__item a {
   text-decoration: none;
   color: white;
+  transition: all 1s;
+}
+.navigation__item a:hover {
+  border-bottom: 1px solid #0045f8;
 }
 .navigation__button {
   display: inline-block;
@@ -203,8 +213,13 @@ body {
   font-size: 1.4rem;
   color: white;
   background-color: #0045f8;
-  padding: 0.8em 2em;
+  padding: 0.6em 2em;
   border-radius: 0.3rem;
+  transition: all 0.5s;
+}
+.navigation__button:hover {
+  background-color: rgba(0, 69, 248, 0.8);
+  transform: scale(1.03);
 }
 
 .header {
@@ -218,7 +233,7 @@ body {
   position: absolute;
   bottom: 1rem;
   z-index: -1;
-  left: 2rem;
+  left: 5rem;
   height: 1.5rem;
   width: 50rem;
   background-image: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.2) 30%, #0045f8);

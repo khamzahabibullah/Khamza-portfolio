@@ -18,7 +18,7 @@
     margin-top: 7rem;
     color: $color-light-gray-1;
     font-size: 20px;
-    width: 58rem;
+    max-width: 58rem;
   }
 
   &__info {
@@ -39,17 +39,23 @@
     color: white;
     text-decoration: none;
     font-size: 1.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     margin-top: 8rem;
 
     & span {
-      border-bottom: 1px solid $color-primary;
+      border-bottom: 2px solid $color-primary;
+      transition: all 0.2s;
     }
 
     &--blue {
       color: $color-primary;
       font-size: 1.6rem;
       text-decoration: none;
+    }
+
+    & span:hover {
+      padding-bottom: 0.4rem;
+      border-bottom: 3px solid $color-primary;
     }
   }
 }
