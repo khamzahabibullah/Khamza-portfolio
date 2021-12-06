@@ -1,0 +1,30 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.8rem;
+
+  &__items {
+    display: flex;
+    font-size: 1.4rem;
+    gap: 8rem;
+    list-style: none;
+    color: white;
+    margin: 0;
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: white;
+  }
+
+  &__button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    background-color: $color-primary;
+    padding: 0.8em 2em;
+    border-radius: 0.3rem;
+  }
+}

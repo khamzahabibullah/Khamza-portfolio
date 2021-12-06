@@ -1,3 +1,157 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #212121;
+  font-family: "Sora", sans-serif;
+}
+
+.heading-primary {
+  color: white;
+  font-family: "Amiri", serif;
+  font-size: 9rem;
+  font-weight: 400;
+  line-height: 8rem;
+  letter-spacing: 2%;
+}
+
+.para-primary {
+  color: #999999;
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+.para-primary--accent {
+  color: #0045f8;
+}
+
+.container {
+  padding: 0 12rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+.navigation__items {
+  display: flex;
+  font-size: 1.4rem;
+  gap: 8rem;
+  list-style: none;
+  color: white;
+  margin: 0;
+}
+.navigation__item a {
+  text-decoration: none;
+  color: white;
+}
+.navigation__button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #0045f8;
+  padding: 0.8em 2em;
+  border-radius: 0.3rem;
+}
+
+.header {
+  padding-top: 8rem;
+}
+.header__main {
+  width: 100rem;
+  position: relative;
+}
+.header__main-decoration {
+  position: absolute;
+  bottom: 1rem;
+  z-index: -1;
+  left: 2rem;
+  height: 1.5rem;
+  width: 50rem;
+  background-image: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.2) 30%, #0045f8);
+  border-radius: 3px;
+}
+.header__sub {
+  width: 80rem;
+  float: right;
+  padding-top: 10rem;
+}
 
 /*# sourceMappingURL=style.css.map */

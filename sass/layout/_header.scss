@@ -1,0 +1,30 @@
+.header {
+  padding-top: 8rem;
+
+  &__main {
+    width: 100rem;
+    position: relative;
+
+    &-decoration {
+      position: absolute;
+      bottom: 1rem;
+      z-index: -1;
+      left: 2rem;
+      height: 1.5rem;
+      width: 50rem;
+      background-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba($color-white, 0.2) 30%,
+        $color-primary
+      );
+      border-radius: 3px;
+    }
+  }
+
+  &__sub {
+    width: 80rem;
+    float: right;
+    padding-top: 10rem;
+  }
+}
