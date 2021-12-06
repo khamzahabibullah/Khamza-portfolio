@@ -1,0 +1,55 @@
+.work {
+  padding-top: 12rem;
+  display: flex;
+
+  &__tag {
+    color: white;
+    background-color: $color-primary;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 3px;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__text {
+    margin-top: 7rem;
+    color: $color-light-gray-1;
+    font-size: 20px;
+    width: 58rem;
+  }
+
+  &__info {
+    width: 60%;
+  }
+
+  &__image {
+    width: 40%;
+    text-align: right;
+
+    & img {
+      display: inline;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    margin-top: 8rem;
+
+    & span {
+      border-bottom: 1px solid $color-primary;
+    }
+
+    &--blue {
+      color: $color-primary;
+      font-size: 1.6rem;
+      text-decoration: none;
+    }
+  }
+}

@@ -16,3 +16,21 @@
     color: $color-primary;
   }
 }
+
+.secondary-heading {
+  font-family: $font-headings;
+  font-weight: 400;
+  color: white;
+  font-size: 6rem;
+  line-height: 8rem;
+  letter-spacing: 2%;
+  text-align: center;
+}
+
+.tertiary-heading {
+  color: white;
+  font-size: 3.4rem;
+  font-family: $font-headings;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,12 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(50px);
+    // transform: scaleX(79.5%) scaleY(65%);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}

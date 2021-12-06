@@ -23,8 +23,15 @@
   }
 
   &__sub {
+    display: flex;
     width: 80rem;
-    float: right;
+    margin-left: auto;
+    margin-right: 0;
     padding-top: 10rem;
+
+    &--ball {
+      margin-right: 4rem;
+      animation: bounce 3s ease-in-out infinite;
+    }
   }
 }
