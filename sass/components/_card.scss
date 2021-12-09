@@ -1,0 +1,35 @@
+.card {
+  background-color: $color-white;
+  padding: 3rem;
+  border-radius: 0.3rem;
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__icon {
+    margin-right: 2rem;
+  }
+
+  &__heading {
+    font-family: $font-headings;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $color-light-gray-2;
+    margin-top: 2rem;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  margin-top: 8rem;
+}

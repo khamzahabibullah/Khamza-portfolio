@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Sora:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <nav class="container navigation">
@@ -20,8 +21,8 @@
       </div>
       <ul class="navigation__items">
         <li class="navigation__item"><a href="#">Home</a></li>
-        <li class="navigation__item"><a href="#">Work</a></li>
-        <li class="navigation__item"><a href="#">About</a></li>
+        <li class="navigation__item"><a href="#work">Work</a></li>
+        <li class="navigation__item"><a href="#about">About</a></li>
         <li class="navigation__item"><a href="#">Blog</a></li>
       </ul>
       <a href="#" class="navigation__button">Let's Talk</a>
@@ -47,7 +48,7 @@
       </div>
     </header>
 
-    <section class="section-work container">
+    <section class="section-work container" id="work">
       <h2 class="secondary-heading">My Work</h2>
       <div class="work">
         <div class="work__info">
@@ -62,8 +63,18 @@
             exclusively with CSS. Fully responsive on all devices.
           </p>
           <div>
-            <a href="#" class="work__link"><span>Github Repo &#8599;</span></a>
-            <a href="#" class="work__link--blue">Live Site &#8599;</a>
+            <a
+              href="https://github.com/khamzahabibullah/Natours"
+              target="_blank"
+              class="work__link"
+              ><span>Github Repo &#8599;</span></a
+            >
+            <a
+              href="https://khamzahabibullah.github.io/Natours/"
+              target="_blank"
+              class="work__link--blue"
+              >Live Site &#8599;</a
+            >
           </div>
         </div>
         <div class="work__image">
@@ -83,12 +94,79 @@
             viewing.
           </p>
           <div>
-            <a href="#" class="work__link"><span>Github Repo &#8599;</span></a>
-            <a href="#" class="work__link--blue">Live Site &#8599;</a>
+            <a
+              href="https://github.com/Sajakhtar/cryptocanons"
+              target="_blank"
+              class="work__link"
+              ><span>Github Repo &#8599;</span></a
+            >
+            <a
+              href="https://www.cryptocanons.com/"
+              target="_blank"
+              class="work__link--blue"
+              >Live Site &#8599;</a
+            >
           </div>
         </div>
         <div class="work__image">
           <img src="images/cryptocanons.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-about container" id="about">
+      <h2 class="secondary-heading">About Me</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card__content">
+            <img src="images/js.svg" alt="javascript icon" class="card__icon" />
+            <h4 class="card__heading">Frontend Development</h4>
+          </div>
+          <p class="card__text">
+            I love frontend development, it allows me to express myself
+            artistically as well as technically. Creating amazing user
+            experiences that are not only aestethic but widely accessible as
+            well is my ultimate goal when creating websites.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img src="images/code.svg" alt="code icon" class="card__icon" />
+            <h4 class="card__heading">Coding Teacher</h4>
+          </div>
+          <p class="card__text">
+            I have taught coding in Dubai both privately and with Le Wagon. I
+            have had the fortune of teaching students of all backgrounds. Some
+            of the places I have taught before are with UAE Government(AI
+            Office), Coders HQ, New York University Abu Dhabi, Dubai Expo 2020.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img src="images/ruby.svg" alt="ruby icon" class="card__icon" />
+            <h4 class="card__heading">Le Wagon Graduate</h4>
+          </div>
+          <p class="card__text">
+            I graduated from Le Wagon, which is considered one of the best
+            coding bootcamps in the world. Not only did I learn to code but I
+            met collegues, friends and mentors from all over the world. Le Wagon
+            has become my second family.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__content">
+            <img src="images/steam.svg" alt="steam icon" class="card__icon" />
+            <h4 class="card__heading">Video Game Enthusiast</h4>
+          </div>
+          <p class="card__text">
+            In my free time, I love to play video games. My favorite video game
+            franchise is Pheonix Wright Ace Attorney games. The complexity of
+            the story, compelling characters as well as fun gameplay is what
+            makes me keep coming back to it.
+          </p>
         </div>
       </div>
     </section>

@@ -180,6 +180,38 @@ body {
   border-bottom: 3px solid #0045f8;
 }
 
+.card {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 0.3rem;
+}
+.card__content {
+  display: flex;
+  align-items: flex-end;
+}
+.card__icon {
+  margin-right: 2rem;
+}
+.card__heading {
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+.card__text {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #707070;
+  margin-top: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  margin-top: 8rem;
+}
+
 .container {
   padding-inline: 12em;
   margin-inline: auto;
@@ -252,6 +284,10 @@ body {
 }
 
 .section-work {
+  padding-top: 15rem;
+}
+
+.section-about {
   padding-top: 15rem;
 }
 
