@@ -74,13 +74,15 @@
 
 .toggle-button {
   position: absolute;
-  top: 0.75rem;
-  right: 1rem;
+  top: 2.5rem;
+  right: 5rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  width: 5rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0;
 
   @include respond(tab-port) {
     display: flex;

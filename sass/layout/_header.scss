@@ -28,6 +28,10 @@
       );
       border-radius: 3px;
 
+      @include respond(tab-port) {
+        display: none;
+      }
+
       @include respond(phone) {
         width: 34rem;
       }

@@ -180,6 +180,11 @@ body {
   padding: 1rem 3rem;
   border-radius: 3px;
 }
+@media (max-width: 56.25em) {
+  .work__tag {
+    padding: 0.75rem 1.5rem;
+  }
+}
 .work__tag:not(:last-child) {
   margin-right: 3rem;
 }
@@ -400,13 +405,15 @@ body {
 
 .toggle-button {
   position: absolute;
-  top: 0.75rem;
-  right: 1rem;
+  top: 2.5rem;
+  right: 5rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  width: 5rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0;
 }
 @media (max-width: 56.25em) {
   .toggle-button {
@@ -450,6 +457,11 @@ body {
   width: 50rem;
   background-image: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.2) 30%, #0045f8);
   border-radius: 3px;
+}
+@media (max-width: 56.25em) {
+  .header__main-decoration {
+    display: none;
+  }
 }
 @media (max-width: 37.5em) {
   .header__main-decoration {
