@@ -2,6 +2,14 @@
   padding-top: 12rem;
   display: flex;
 
+  @include respond(tab-land) {
+    gap: 4rem;
+  }
+
+  @include respond(tab-port) {
+    display: block;
+  }
+
   &__tag {
     color: white;
     background-color: $color-primary;
@@ -17,17 +25,34 @@
   &__text {
     margin-top: 7rem;
     color: $color-light-gray-1;
-    font-size: 20px;
+    font-size: 2rem;
     max-width: 58rem;
+
+    @include respond(tab-port) {
+      max-width: 100%;
+
+    }
   }
 
   &__info {
     width: 60%;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__image {
     width: 40%;
     text-align: right;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+      margin-top: 10rem;
+
+    }
 
     & img {
       display: inline;
@@ -41,6 +66,10 @@
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
     margin-top: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 5rem;
+    }
 
     & span {
       border-bottom: 2px solid $color-primary;

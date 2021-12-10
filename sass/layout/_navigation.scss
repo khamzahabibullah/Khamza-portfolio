@@ -4,6 +4,11 @@
   align-items: center;
   padding-top: 0.8rem;
 
+  @include respond(tab-port) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   &__items {
     display: flex;
     font-size: 1.4rem;
@@ -11,12 +16,32 @@
     list-style: none;
     color: white;
     margin: 0;
+
+    @include respond(tab-port) {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      gap: 5rem;
+      padding: 0;
+    }
   }
 
   &__item a {
     text-decoration: none;
     color: white;
-    transition: all .5s;
+    transition: all 0.5s;
+
+    @include respond(tab-port) {
+      // display: none;
+      width: 100%;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__item {
+    @include respond(tab-port) {
+      text-align: center;
+    }
   }
 
   &__item a:hover {
@@ -32,10 +57,43 @@
     padding: 0.6em 2em;
     border-radius: 0.3rem;
     transition: all 0.5s;
+
+    @include respond(tab-port) {
+      display: none;
+      margin-inline: auto;
+      margin-top: 4rem;
+      font-size: 1.8rem;
+    }
   }
 
   &__button:hover {
     background-color: rgba($color-primary, 0.8);
     transform: scale(1.03);
   }
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+
+  @include respond(tab-port) {
+    display: flex;
+  }
+
+  & .bar {
+    height: 3px;
+    width: 100%;
+    background-color: $color-white;
+    border-radius: 3px;
+  }
+}
+
+.active {
+  display: flex;
 }

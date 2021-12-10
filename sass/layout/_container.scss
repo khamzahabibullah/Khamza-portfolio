@@ -2,4 +2,12 @@
   padding-inline: 12em;
   margin-inline: auto;
   // max-width: 80rem;
+
+  @include respond(tab-land) {
+    padding-inline: 6em;
+  }
+
+  @include respond(tab-port) {
+    padding-inline: 6em;
+  }
 }
