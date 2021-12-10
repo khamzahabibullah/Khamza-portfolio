@@ -182,11 +182,21 @@ body {
 }
 @media (max-width: 56.25em) {
   .work__tag {
+    font-size: 1.5rem;
     padding: 0.75rem 1.5rem;
+    display: block;
+    width: 50%;
+    margin-bottom: 3rem;
+    margin-inline: auto;
   }
 }
 .work__tag:not(:last-child) {
   margin-right: 3rem;
+}
+@media (max-width: 56.25em) {
+  .work__tag:not(:last-child) {
+    margin-right: auto;
+  }
 }
 .work__text {
   margin-top: 7rem;
