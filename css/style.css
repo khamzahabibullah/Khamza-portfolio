@@ -184,6 +184,7 @@ body {
   background-color: #fff;
   padding: 3rem;
   border-radius: 0.3rem;
+  transition: all 0.4s;
 }
 .card__content {
   display: flex;
@@ -203,6 +204,9 @@ body {
   line-height: 2rem;
   color: #707070;
   margin-top: 2rem;
+}
+.card:hover {
+  transform: translateY(-1rem);
 }
 
 .cards {
@@ -234,7 +238,7 @@ body {
 .navigation__item a {
   text-decoration: none;
   color: white;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .navigation__item a:hover {
   border-bottom: 1px solid #0045f8;
@@ -284,11 +288,16 @@ body {
 }
 
 .section-work {
-  padding-top: 15rem;
+  padding-top: 20rem;
 }
 
 .section-about {
-  padding-top: 15rem;
+  padding-top: 20rem;
+}
+
+.section-contact {
+  padding-top: 20em;
+  height: 90rem;
 }
 
 /*# sourceMappingURL=style.css.map */

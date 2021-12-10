@@ -2,6 +2,7 @@
   background-color: $color-white;
   padding: 3rem;
   border-radius: 0.3rem;
+  transition: all .4s;
 
   &__content {
     display: flex;
@@ -24,6 +25,10 @@
     line-height: 2rem;
     color: $color-light-gray-2;
     margin-top: 2rem;
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
   }
 }
 
